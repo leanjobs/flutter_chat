@@ -9,8 +9,8 @@
       "request": "launch",
       "type": "dart",
       "args": [
-        "--dart-define", "ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVhY2hjcGlveml1Ymh0d3dsbHR4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDU1NDE1NDUsImV4cCI6MjAyMTExNzU0NX0.kMpr8eKJ7HOp2tmSdXXp5zJtGbn6ttmpoWHM2mWV-nE",
-        "--dart-define", "DB_URL=https://uachcpioziubhtwwlltx.supabase.co"
+        "--dart-define", "ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3ZmFqa2NjcHpqc3ZoZG9lZ3F4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDU1NDM2OTcsImV4cCI6MjAyMTExOTY5N30.SeIm1lQDSdH_Fnoj6FpavHHcoPjnJm-8iRFVxaCCvgE",
+        "--dart-define", "DB_URL=https://jwfajkccpzjsvhdoegqx.supabase.co"
       ],
     },
     {

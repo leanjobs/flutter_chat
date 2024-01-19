@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 
 import 'package:my_chat_app/models/message.dart';
 import 'package:my_chat_app/models/profile.dart';
+import 'package:my_chat_app/pages/video_call_page.dart';
 import 'package:my_chat_app/utils/constants.dart';
+import 'package:my_chat_app/utils/signalling.service.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:timeago/timeago.dart';
 
@@ -29,6 +31,7 @@ class ChatPage extends StatefulWidget {
 }
 
 class _ChatPageState extends State<ChatPage> {
+
   late final Stream<List<Message>> _messagesStream;
   final Map<String, Profile> _profileCache = {};
 
@@ -61,7 +64,18 @@ class _ChatPageState extends State<ChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Chat')),
+      appBar: AppBar(
+        title: const Text('Chat'),
+        actions: [
+          IconButton(onPressed: () {
+            
+          },
+          icon: const Icon(
+            Icons.video_camera_back_outlined
+          ),
+          )
+        ],
+        ),
       body: StreamBuilder<List<Message>>(
         stream: _messagesStream,
         builder: (context, snapshot) {
